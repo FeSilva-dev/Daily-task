@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-color: blueviolet;
+}
+
+.boxAnotacoes{
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    padding: 30px 50px;
+    margin: 10px auto;
+    border-radius: 15px;
+}
+
+.boxAnotacoes h2{text-align: center; margin-bottom: 20px;} 
+
+.tarefaSingle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px dotted #ccc;
+    margin-bottom: 15px;
+}
+
+.tarefaSingle p{
+    font-size: 20px;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.trash{
+    color: rgb(248, 54, 54);
+    cursor: pointer;
+}
+
+.trash:hover{
+    color: rgb(248, 104, 104)
+}
+
+.addTarefa{
+    position: fixed;
+    right: 40px;
+    bottom: 30px;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 40px;
+    transition: 0.2s;
+}
+
+.addTarefa:hover{
+    background-color: #ccc;
+}
+
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 99999;
+    transition: 0.5s;
+}
+
+.modalContent{
+    width: 100%;
+    max-width: 350px;
+    padding: 30px 20px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+.modalContent .close{
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    cursor: pointer;
+}
+
+.modalContent h3{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.modalContent input{
+    margin-top: 10px;
+    padding: 10px 12px;
+    outline: none;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid rgb(129, 129, 129);
+}
+
+.modalContent button{
+    width: 180px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    border-radius: 20px;
+    border: 0;
+    outline: none;
+    color: white;
+    background-color: rgb(132, 56, 202);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.modalContent button:hover{
+    background-color: rgb(167, 97, 233);
+}
+
+.unDone{
+    color: red;
+}
+
+.done{
+    color: rgb(12, 223, 12);
+}
